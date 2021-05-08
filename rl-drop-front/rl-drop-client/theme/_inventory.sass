@@ -1,0 +1,42 @@
+@import './_mix'
+.inventory
+  padding-bottom: 16px
+  +lg
+    padding-bottom: 32px
+  &__top
+    padding: 50px 0 32px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__filter
+    display: flex
+    align-items: center
+  &__title
+    margin-bottom: 24px
+  &__filterItem
+    padding: 8px 16px
+    color: rgba(224, 224, 255, 0.6)
+    position: relative
+    display: flex
+    align-items: center
+    font-size: 14px
+    font-weight: 500
+    cursor: pointer
+    user-select: none
+    border-radius: 24px
+    &:not(:last-child)
+      margin-right: 24px
+    &_active
+      +btn_primary
+      color: white
+      .quantity
+        color: #00bbff
+        background: white
+    .quantity
+      padding: 1px 4px
+      background: #00bbff
+      border-radius: 64px
+      color: white
+      margin-left: 9px
+      font-size: 13px
+      line-height: 16px
